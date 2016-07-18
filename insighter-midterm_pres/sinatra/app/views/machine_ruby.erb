@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    	<script type="text/javascript" src="/public/javascript/script.js"></script>
+    
+    	<title>LHL Midterm Project</title>
+
+   	 	<!-- Bootstrap Core CSS -->
+    	<link href="/public/stylesheets/bootstrap.min.css" rel="stylesheet">
+    	<link href='https://fonts.googleapis.com/css?family=Catamaran:400' rel='stylesheet' type='text/css'>
+    	<!-- Custom CSS -->
+    	<style>
+    		body {
+        	padding-top: 70px;
+        	/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    	}
+    	</style>
+
+	<body>
+	  <div class="machine-container">
+		<h1>Machine Learning: Rules Generation using ID3</h1>
+		<div>
+  			<!--<p><a href="/prob">Probability Check</a></p>
+  			<p><a href="/machine">Understanding Revenue Patterns</a></p>
+  			<p><a href="/tracker">insightER Real Time Analytics</a></p> -->
+		</div>
+		<p>
+		</p>
+	
+  		<table class="id3" align="center" width="35%">
+  			<tr>
+    			<th></th>
+  			</tr>
+  			<tr>
+    			<td>if Discount=='<30' and Coffee=='AMERICANO' then Revenue_Goes='UP'</td>
+  			</tr>
+  			<tr>
+    			<td>elsif Discount=='<30' and Coffee=='CAPPUCCINO' then Revenue_Goes='UP'</td>
+  			</tr>
+  			<tr>
+    			<td>elsif Discount=='<30' and Coffee=='ESPRESSO' then Revenue_Goes='DOWN'</td>
+  			</tr>
+  			<tr>
+    			<td>elsif Discount=='[30-50]' and Time=='MORNING' then Revenue_Goes='UP'</td>
+  			</tr>
+  			<tr>
+    			<td>elsif Discount=='[30-50]' and Time=='EVENING' and Coffee=='AMERICANO' then Revenue_Goes='UP'</td>
+  			</tr>
+        <tr>
+          <td>elsif Discount=='[30-50]' and Time=='EVENING' and Coffee=='CAPPUCCINO' then Revenue_Goes='UP'</td>
+        </tr>
+
+        <tr>
+          <td>elsif Discount=='[30-50]' and Time=='EVENING' and Coffee=='ESPRESSO' then Revenue_Goes='DOWN'</td>
+        </tr>
+        <tr>
+          <td>elsif Discount=='[50-80]' then Revenue_Goes='DOWN'</td>
+        </tr>
+        <tr>
+          <td>elsif Discount=='>80' then Revenue_Goes='DOWN'</td>
+        </tr>
+		</table>
+	  </div>
+
+	</body>
+</html>

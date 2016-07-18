@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+  <head>
+	<html lang="en">
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    	<script type="text/javascript" src="/public/javascript/script.js"></script>
+    
+    	<title>LHL Midterm Project</title>
+
+   	 	<!-- Bootstrap Core CSS -->
+    	<link href="/stylesheet/bootstrap.min.css" rel="stylesheet">
+    	<link href='https://fonts.googleapis.com/css?family=Catamaran:400' rel='stylesheet' type='text/css'>
+    	<!-- Custom CSS -->
+    	<style>
+    		body {
+        	padding-top: 70px;
+        	/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+        	
+    	}
+    	</style>
+    </head>
+
+	<body>
+	
+	<h1 id="heading-tracker">insightER Probability Check (in %)</h1>
+
+	<!--<div class="machine">
+  		<p><a href="/machine">Understanding Revenue Patterns</a></p>
+  		<p><a href="/tracker">insightER Real Time Analytics</a></p>
+	</div> -->
+
+	  
+	  <div class="prob-container">
+    	<form method="post" action="/prob">
+  			<div class="boxdiv">
+    			<label>Coffee Type</label>
+    			<input type="text" class="form-control" name="coffee">
+  			</div>
+  			<div class="boxdiv">
+    			<label>Size</label>
+    			<input type="text" class="form-control" name="size">
+  			</div>
+  			<div class="boxdiv">
+    			<label>Morning or Evening</label>
+    			<input type="text" class="form-control" name="time">
+  			</div>
+ 		 	<div>
+    			<input class="btn btn-default" type="submit" value="Submit">
+  			</div>
+		</form>
+		<div class="result-container">   
+	    	<div class="result" id="increase"><%= @increase %></div>
+	    	<div class="result" id="decrease"><%= @decrease %></div>
+	    </div>
+	</div>
+	
+	<!--<div class="effect" id="left-effect">INCREASE</div>
+	<div class="effect" id="right-effect">DECREASE</div>
+	-->
+  <div class="make-space"></div>
+	</body>
+</html>
+    
